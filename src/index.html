@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html ng-app = 'vs'>
+<head>
+	<meta charset="UTF-8">
+	<title>Verwaltungssoftware</title>
+
+	<!-- Angular lib -->
+	<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js'></script>
+	<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-resource.js'></script>
+	<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.js'></script>
+
+	<!--bootstrap  -->
+	<link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css'>
+	<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.3.0/css/material-fullpalette.css'>
+	<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.3.0/css/material.css'>
+	<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.3.0/css/ripples.css'>
+	<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.3.0/css/roboto.css'>
+	<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.3.0/fonts/Material-Design-Icons.svg'>
+
+	<!-- Für das Material Design und Dialog -->
+	<link rel='stylesheet prefetch' href='https://cdn.gitcdn.link/cdn/angular/bower-material/v1.1.1/angular-material.css'>
+	<link rel='stylesheet prefetch' href='https://material.angularjs.org/1.1.1/docs.css'>
+
+	<!-- Für das Material Design und Dialog -->
+	<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.js'></script>
+	<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js'></script>
+	<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-route.min.js'></script>
+	<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js'></script>
+	<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js'></script>
+	<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-114/svg-assets-cache.js'></script>
+	<script src='https://cdn.gitcdn.link/cdn/angular/bower-material/v1.1.1/angular-material.js'></script>
+
+	<!-- local Angular js -->
+	<script src='/VS/src/js/app/app.module.js'></script>
+	<script src='/VS/src/js/app/app.config.js'></script>
+
+	<script src='/VS/src/js/app/blog-list/blog-list.module.js'></script>
+	<script src='/VS/src/js/app/blog-list/blog-list.component.js'></script>
+
+</head>
+<body>
+	<div class="navbar navbar-inverse navbar-fixed-top">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-warning-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="javascript:void(0)">ProTailor</a>
+		</div>
+
+		<div class="navbar-collapse collapse navbar-warning-collapse">
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="#dashboard">Übersicht</a></li>
+				<li><a href="#auftragdetails">Auftragdetails</a></li>
+				<li><a href="#auftragerstellen">Auftragerstellen</a></li>
+				<!-- <li><a href="#auftragerstellenDialog">Auftragerstellen Dialog</a></li> -->
+				<li><a href="#mitarbeiteruebersicht">Mitarbeiterübersicht</a></li>
+				<li><a href="#mitarbeiterdetails">Mitarbeiterdetails</a></li>
+			</ul>
+
+			<form class="navbar-form navbar-left">
+				<input type="text" class="form-control col-lg-8" placeholder="Search">
+			</form>
+		</div>
+	</div>
+
+	<div class="container body-content">
+		<div ng-view></div>
+
+	</div>
+
+</body>
+</html>
