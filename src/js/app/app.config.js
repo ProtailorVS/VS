@@ -1,11 +1,6 @@
 'use strict';
 
 angular.module('vs').
-	config(
-		function(
-			$locationProvider,
-			$routeProvider
-			){
 
 			$routeProvider.
 			when("/", {
