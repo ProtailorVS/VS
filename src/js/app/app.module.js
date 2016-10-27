@@ -1,4 +1,4 @@
-'use stricht';
+'use strict';
 
 angular.module('vs',[
 	//external
@@ -6,6 +6,7 @@ angular.module('vs',[
 	'ngRoute',
 
 	//internal
-	'blogList'
+	'dashboard',
+	'auftragdetails'
 
 ]);
